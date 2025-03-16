@@ -15,7 +15,7 @@ import { blogTheme } from './blog-theme'
 export default defineConfig({
   // 继承博客主题(@sugarat/theme)
   extends: blogTheme,
-  base: '/AeroDing.me/',
+  base: '/',
   lang: 'zh-cn',
   title: 'AeroDing',
   description: 'AeroDing 的博客',
