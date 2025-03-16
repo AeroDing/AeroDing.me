@@ -32,7 +32,7 @@ const blogTheme = getThemeConfig({
     mobileDisplay: true,
     models: [
       {
-        path: 'https://registry.npmmirror.com/oml2d-models/latest/files/models/Senko_Normals/senko.model3.json'
+        path: 'https://cdn.jsdelivr.net/npm/oml2d-models@latest/models/Senko_Normals/senko.model3.json'
       }
     ]
   },
