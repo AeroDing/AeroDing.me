@@ -46,7 +46,13 @@ export default defineConfig({
     // },
     nav: [
       { text: '首页', link: '/' },
-      { text: '关于我', link: '/aboutme.html' }
+      {
+        text: '工具',
+        items: [
+          { text: '图床', link: 'http://imgbed.dpxin.top' }
+        ]
+      },
+      { text: '关于我', link: '/aboutme.html' },
     ],
     socialLinks: [
       {
