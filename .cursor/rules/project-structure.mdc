@@ -1,0 +1,32 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# 项目结构指南
+
+这是一个基于 Node.js 的项目，主要用于构建文档或静态网站。
+
+## 关键文件与目录
+
+*   **入口与配置**:
+    *   `package.json`: 定义项目依赖和脚本。
+    *   `.vitepress/`: 包含 VitePress 的配置和主题。通常 `config.js` 或 `config.ts` 在此目录下，是主要的配置文件。
+*   **文档内容**:
+    *   `docs/`: 存放主要的 Markdown 文档内容。
+    *   `README.md`: 项目的说明文件。
+*   **依赖与构建**:
+    *   `node_modules/`: 存储项目依赖。
+    *   `pnpm-lock.yaml`: pnpm 的锁定文件，确保依赖版本一致。
+*   **Git 相关**:
+    *   `.git/`: Git 仓库目录。
+    *   `.gitignore`: 指定 Git 忽略的文件。
+*   **其他**:
+    *   `.github/`: 可能包含 GitHub Actions 工作流或其他 GitHub 相关配置。
+    *   `.npmrc`: npm 或 pnpm 的配置文件。
+
+## 主要技术栈
+
+*   Node.js
+*   VitePress (用于文档/站点生成)
+*   pnpm (包管理器)
