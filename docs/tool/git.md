@@ -17,8 +17,8 @@ windows
 ## 配置
   ```bash
   # 配置用户名和邮箱
-  git config --global user.name "AeroDing"                 # 配置全局用户名
-  git config --global user.email "dingpx9999@163.com"      # 配置全局邮箱
+  git config-- global user.name "xxxx"                 # 配置全局用户名
+  git config --global user.email "xxxx@xxxx.com"      # 配置全局邮箱
 
   # 配置命令行颜色
   git config --global color.ui true                         # git status等命令自动着色
