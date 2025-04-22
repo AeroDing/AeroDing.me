@@ -1,9 +1,9 @@
 ---
 tags:
- - react
- - redux
- - toolkit
- - state
+  - react
+  - redux
+  - toolkit
+  - state
 ---
 # 使用Redux Toolkit管理React应用状态的深度实践指南
 
