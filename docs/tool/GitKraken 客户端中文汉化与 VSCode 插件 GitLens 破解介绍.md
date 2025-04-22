@@ -1,12 +1,11 @@
 
 ---
 tags:
- - vscode
- - cursor
+ - tool
  - gitkraken
  - gitlens
+ - vscode
  - plugin
- - tool
 ---
 
 # GitKraken 客户端中文汉化与 VSCode 插件 GitLens 破解介绍
