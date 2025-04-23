@@ -9,63 +9,64 @@ tags:
 
 ## 配置文件
 
-```json
+```jsonc
 {
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.fontFamily": "Input Mono, monospace",
-    "editor.guides.bracketPairs": "active",
-    "editor.lineNumbers": "interval",
-    "editor.renderWhitespace": "boundary",
-    "window.autoDetectColorScheme": true,
-    "workbench.colorTheme": "Vitesse Dark",
-    "workbench.editor.tabActionLocation": "left",
-    "workbench.fontAliasing": "antialiased",
-    "workbench.iconTheme": "catppuccin-perfect-mocha",
-    "workbench.list.smoothScrolling": true,
-    "workbench.preferredLightColorTheme": "Vitesse Light",
-    "workbench.productIconTheme": "icons-carbon",
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.tree.expandMode": "singleClick",
-    "workbench.tree.indent": 10,
-    "debug.onTaskErrors": "debugAnyway",
-    "diffEditor.ignoreTrimWhitespace": false,
+    // 编辑器核心配置
+    "editor.cursorSmoothCaretAnimation": "on", // 启用光标插入符平滑动画效果
+    "editor.fontFamily": "Input Mono, monospace", // 设置编辑器字体族
+    "editor.guides.bracketPairs": "active", // 在活动括号对周围显示引导线
+    "editor.lineNumbers": "interval", // 行号显示模式：间隔显示（如5,10,15...）
+    "editor.renderWhitespace": "boundary", // 显示边界空白字符（单词间空格等）
+    "window.autoDetectColorScheme": true, // 自动检测系统颜色方案
+    "workbench.colorTheme": "Vitesse Dark", // 主颜色主题
+    "workbench.editor.tabActionLocation": "left", // 标签页操作按钮位置
+    "workbench.fontAliasing": "antialiased", // 字体抗锯齿渲染方式
+    "workbench.iconTheme": "catppuccin-perfect-mocha", // 图标主题
+    "workbench.list.smoothScrolling": true, // 列表平滑滚动
+    "workbench.preferredLightColorTheme": "Vitesse Light", // 浅色模式备用主题
+    "workbench.productIconTheme": "icons-carbon", // 产品图标主题
+    "workbench.startupEditor": "newUntitledFile", // 启动时打开新空白文件
+    "workbench.tree.expandMode": "singleClick", // 资源管理器单击展开
+    "workbench.tree.indent": 10, // 树状结构缩进量（像素）
+    "debug.onTaskErrors": "debugAnyway", // 遇到任务错误时仍继续调试
+    "diffEditor.ignoreTrimWhitespace": false, // 差异编辑器不忽略空白修改
     "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
     "editor.find.addExtraSpaceOnTop": false,
-    "editor.inlineSuggest.enabled": true,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.suggestSelection": "first",
-    "editor.tabSize": 2,
-    "editor.unicodeHighlight.invisibleCharacters": false,
-    "editor.stickyScroll.enabled": true,
-    "editor.hover.sticky": true,
+    "editor.inlineSuggest.enabled": true, // 启用行内代码建议
+    "editor.multiCursorModifier": "ctrlCmd", // 多光标快捷键使用Ctrl/Cmd
+    "editor.suggestSelection": "first", // 自动选择建议列表首项
+    "editor.tabSize": 2, // Tab缩进设置为2空格
+    "editor.unicodeHighlight.invisibleCharacters": false, // 不显示Unicode不可见字符提示
+    "editor.stickyScroll.enabled": true, // 启用粘性滚动功能
+    "editor.hover.sticky": true, // 保持悬停提示框直到手动关闭
     "editor.codeActionsOnSave": {
-        "source.fixAll": "never",
-        "source.fixAll.eslint": "explicit",
-        "source.organizeImports": "always",
+        "source.fixAll": "never", // 禁用所有自动修复
+        "source.fixAll.eslint": "explicit", // 仅显式调用时运行ESLint修复
+        "source.organizeImports": "always" // 总是自动整理import语句
     },
-    "editor.foldingImportsByDefault": true,
-    "editor.foldOnLoad": true,
-    "editor.foldLevel": 4,
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "files.eol": "\n",
-    "files.insertFinalNewline": true,
-    "files.simpleDialog.enable": true,
-    "git.autofetch": true,
-    "git.confirmSync": false,
-    "git.enableSmartCommit": true,
-    "git.untrackedChanges": "separate",
+    "editor.foldingImportsByDefault": true, // 默认折叠import语句
+    "editor.foldOnLoad": true, // 打开文件时自动折叠到预设层级
+    "editor.foldLevel": 4, // 默认折叠层级深度
+    "explorer.confirmDelete": false, // 删除文件时无需确认
+    "explorer.confirmDragAndDrop": false, // 拖拽移动文件时无需确认
+    "files.eol": "\n", // 文件默认换行符为LF
+    "files.insertFinalNewline": true, // 保存时自动插入文件末尾换行
+    "files.simpleDialog.enable": true, // 启用简洁文件对话框
+    "git.autofetch": true, // 自动拉取远程Git变更
+    "git.confirmSync": false, // Git同步时无需确认
+    "git.enableSmartCommit": true, // 启用智能提交（无stage时直接commit）
+    "git.untrackedChanges": "separate", // 未跟踪文件单独显示
     "scm.diffDecorationsGutterWidth": 2,
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.fontWeight": "300",
-    "terminal.integrated.persistentSessionReviveProcess": "never",
-    "terminal.integrated.tabs.enabled": true,
-    "workbench.editor.closeOnFileDelete": true,
-    "workbench.editor.highlightModifiedTabs": true,
-    "workbench.editor.limit.enabled": true,
-    "workbench.editor.limit.perEditorGroup": true,
-    "workbench.editor.limit.value": 5,
+    "terminal.integrated.cursorBlinking": true, // 终端光标闪烁
+    "terminal.integrated.cursorStyle": "line", // 终端光标样式为竖线
+    "terminal.integrated.fontWeight": "300", // 终端字体粗细
+    "terminal.integrated.persistentSessionReviveProcess": "never", // 终端会话不自动恢复进程
+    "terminal.integrated.tabs.enabled": true, // 启用终端标签页
+    "workbench.editor.closeOnFileDelete": true, // 文件删除时自动关闭对应标签
+    "workbench.editor.highlightModifiedTabs": true, // 高亮修改过的标签页
+    "workbench.editor.limit.enabled": true, // 启用编辑器数量限制
+    "workbench.editor.limit.perEditorGroup": true, // 每个编辑器组单独限制
+    "workbench.editor.limit.value": 5, // 每个编辑器组最大标签数
     "search.exclude": {
         "**/*.snap": true,
         "**/*.svg": true,
@@ -92,24 +93,24 @@ tags:
     },
     "window.dialogStyle": "custom",
     "window.nativeTabs": true,
-    "window.title": "${rootName}",
-    "window.titleBarStyle": "custom",
-    "extensions.autoUpdate": "onlyEnabledExtensions",
-    "emmet.showSuggestionsAsSnippets": true,
-    "emmet.triggerExpansionOnTab": false,
+    "window.title": "${rootName}", // 窗口标题显示当前根目录名称
+    "window.titleBarStyle": "custom", // 使用自定义标题栏样式
+    "extensions.autoUpdate": "onlyEnabledExtensions", // 仅自动更新已启用扩展
+    "emmet.showSuggestionsAsSnippets": true, // Emmet建议以代码片段形式展示
+    "emmet.triggerExpansionOnTab": false, // Tab键不触发Emmet展开
     "errorLens.enabledDiagnosticLevels": [
         "warning",
         "error"
-    ],
+    ], // ErrorLens高亮级别
     "errorLens.excludeBySource": [
         "cSpell",
         "Grammarly",
         "eslint"
-    ],
+    ], // ErrorLens排除来源
     "eslint.codeAction.showDocumentation": {
         "enable": true
-    },
-    "eslint.quiet": true,
+    }, // 显示ESLint规则文档
+    "eslint.quiet": true, // 只显示错误和警告，忽略提示
     "eslint.rules.customizations": [
         {
             "rule": "style/*",
@@ -169,9 +170,9 @@ tags:
         "*": true,
         "markdown": true,
         "plaintext": false
-    },
-    "cSpell.allowCompoundWords": true,
-    "cSpell.language": "en,en-US",
+    }, // Copilot启用范围
+    "cSpell.allowCompoundWords": true, // 拼写检查允许复合词
+    "cSpell.language": "en,en-US", // 拼写检查语言
     "css.lint.hexColorLength": "ignore",
     "githubIssues.workingIssueFormatScm": "#${issueNumberLabel}",
     "githubPullRequests.fileListLayout": "tree",
@@ -227,15 +228,15 @@ tags:
     "iconify.annotations": true,
     "iconify.inplace": true,
     "svg.preview.mode": "svg",
-    "prettier.enable": false,
-    "prettier.printWidth": 200,
-    "prettier.semi": false,
-    "prettier.singleQuote": true,
+    "prettier.enable": false, // 关闭Prettier格式化
+    "prettier.printWidth": 200, // Prettier单行最大长度
+    "prettier.semi": false, // Prettier不加分号
+    "prettier.singleQuote": true, // Prettier使用单引号
     // updated 2025-03-10 06:42
     // https://github.com/antfu/vscode-file-nesting-config
-    "explorer.fileNesting.enabled": true,
-    "explorer.fileNesting.expand": false,
-    "explorer.fileNesting.patterns": {
+    "explorer.fileNesting.enabled": true, // 启用资源管理器文件嵌套
+    "explorer.fileNesting.expand": false, // 默认不自动展开嵌套
+    "explorer.fileNesting.patterns": { // 文件嵌套规则
         ".clang-tidy": ".clang-format, .clangd, compile_commands.json",
         ".env": "*.env, .env.*, .envrc, env.d.ts",
         ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .lfsconfig, .mailmap, .git-blame*",
@@ -334,29 +335,29 @@ tags:
         "wxml": "html"
     },
     "minapp-vscode.disableAutoConfig": true,
-    "workbench.preferredDarkColorTheme": "Palenight (Mild Contrast)",
+    "workbench.preferredDarkColorTheme": "Palenight (Mild Contrast)", // 深色模式备用主题
     "terminal.integrated.env.osx": {
         "Q_NEW_SESSION": "1"
     },
     "cursor.cpp.disabledLanguages": [
         "plaintext"
     ],
-    "update.releaseTrack": "prerelease",
-    "editor.accessibilitySupport": "on",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "typescript.updateImportsOnFileMove.enabled": "always",
+    "update.releaseTrack": "prerelease", // 使用预发布版本通道
+    "editor.accessibilitySupport": "on", // 启用辅助功能支持
+    "javascript.updateImportsOnFileMove.enabled": "always", // JS文件移动时自动更新import
+    "typescript.updateImportsOnFileMove.enabled": "always", // TS文件移动时自动更新import
     "cursor.cpp.enablePartialAccepts": true,
-    "workbench.sideBar.location": "right",
-    "explorer.confirmPasteNative": false,
-    "workbench.layoutControl.enabled": false,
-    "editor.linkedEditing": true,
-    "powermode.enabled": true,
-    "powermode.combo.counterEnabled": "hide",
-    "powermode.combo.timerEnabled": "hide",
-    "powermode.presets": "fireworks",
-    "powermode.shake.intensity": 0,
-    "errorLens.statusBarColorsEnabled": true,
-    "editor.minimap.enabled": true,
+    "workbench.sideBar.location": "right", // 侧边栏显示在右侧
+    "explorer.confirmPasteNative": false, // 粘贴本地文件时无需确认
+    "workbench.layoutControl.enabled": false, // 关闭布局控制按钮
+    "editor.linkedEditing": true, // 启用联动编辑
+    "powermode.enabled": true, // 启用Power Mode特效
+    "powermode.combo.counterEnabled": "hide", // 隐藏Power Mode连击计数
+    "powermode.combo.timerEnabled": "hide", // 隐藏Power Mode计时器
+    "powermode.presets": "fireworks", // Power Mode特效为烟花
+    "powermode.shake.intensity": 0, // 关闭Power Mode抖动
+    "errorLens.statusBarColorsEnabled": true, // ErrorLens启用状态栏颜色
+    "editor.minimap.enabled": true, // 启用编辑器迷你地图
     "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.))\\s*($TAGS)",
     "todo-tree.filtering.ignoreGitSubmodules": true,
     "todo-tree.tree.showCountsInTree": true,
