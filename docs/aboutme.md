@@ -14,5 +14,36 @@ tags:
 
 ## 联系方式
 
-- 邮箱：dingpx9999@163.com
+<div class="social-links">
+  <a href="https://x.com/dingpx9999" target="_blank" class="social-link" title="Twitter">
+    <img src="/images/aboutMe/twiter.png" alt="Twitter">
+  </a>
+  <a href="https://t.me/dingpx_bot" target="_blank" class="social-link" title="Telegram">
+    <img src="/images/aboutMe/telegram.png" alt="Telegram">
+  </a>
+  <a href="https://space.bilibili.com/479407971" target="_blank" class="social-link" title="Bilibili">
+    <img src="/images/aboutMe/bilibili.png" alt="Bilibili">
+  </a>
+</div>
 
+<style>
+.social-links {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #666;
+}
+
+.social-link img {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 8px;
+}
+</style>
