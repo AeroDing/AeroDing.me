@@ -36,7 +36,7 @@ tags:
 
 ### 2.1 环境初始化
 
-:::code-group
+::: code-group
 
 ```bash [pnpm]
 pnpm install @reduxjs/toolkit react-redux @types/react-redux
