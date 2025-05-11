@@ -10,7 +10,7 @@ tags:
 
 # React SVG图标自动化最佳实践：基于Vite与unplugin-auto-import的高效集成方案
 
-在现代前端开发中，SVG图标的高效管理和自动化导入已成为提升开发体验的关键环节。本文将深入探讨基于Vite构建工具链，结合unplugin-auto-import与vite-plugin-svgr等前沿技术，实现React项目中SVG图标的自动化导入与全局管理方案。通过本方案，开发者可减少80%以上的重复导入代码量，同时获得完整的TypeScript类型支持和代码提示能力。
+> 在现代前端开发中，SVG图标的高效管理和自动化导入已成为提升开发体验的关键环节。本文将深入探讨基于Vite构建工具链，结合unplugin-auto-import与vite-plugin-svgr等前沿技术，实现React项目中SVG图标的自动化导入与全局管理方案。通过本方案，开发者可减少80%以上的重复导入代码量，同时获得完整的TypeScript类型支持和代码提示能力。
 
 ## 一、SVG处理技术栈架构解析
 

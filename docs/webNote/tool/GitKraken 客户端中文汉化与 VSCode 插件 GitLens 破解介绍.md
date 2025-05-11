@@ -9,7 +9,7 @@ tags:
 
 # GitKraken 客户端中文汉化与 VSCode 插件 GitLens 破解介绍
 
-本文简要介绍了两个实用工具：GitKraken 的中文汉化补丁和 VSCode 插件 GitLens 的破解激活工具，帮助用户更好地使用这两款提升 Git 工作效率的软件。
+> 本文简要介绍了两个实用工具：GitKraken 的中文汉化补丁和 VSCode 插件 GitLens 的破解激活工具，帮助用户更好地使用这两款提升 Git 工作效率的软件。
 
 ---
 

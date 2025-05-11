@@ -9,7 +9,7 @@ tags:
 
 ## 核心摘要
 
-在2025年的现代前端开发体系中，Redux Toolkit已成为React应用状态管理的黄金标准。本文将以最新版Redux Toolkit 3.0为核心，深入解析如何通过模块化状态管理、自动化类型推导与智能缓存机制构建企业级React应用。我们将重点探讨createSlice的进阶用法、createAsyncThunk与RTK Query的协同模式，以及如何利用TypeScript 5.0实现端到端类型安全。通过电商购物车案例，演示从基础配置到复杂异步流处理的完整开发链路，为开发者提供可直接落地的工程实践方案。
+> 在2025年的现代前端开发体系中，Redux Toolkit已成为React应用状态管理的黄金标准。本文将以最新版Redux Toolkit 3.0为核心，深入解析如何通过模块化状态管理、自动化类型推导与智能缓存机制构建企业级React应用。我们将重点探讨createSlice的进阶用法、createAsyncThunk与RTK Query的协同模式，以及如何利用TypeScript 5.0实现端到端类型安全。通过电商购物车案例，演示从基础配置到复杂异步流处理的完整开发链路，为开发者提供可直接落地的工程实践方案。
 
 ## 一、Redux Toolkit架构解析与核心优势
 
