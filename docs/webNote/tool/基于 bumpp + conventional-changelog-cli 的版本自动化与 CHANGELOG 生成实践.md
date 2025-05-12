@@ -29,6 +29,9 @@ pnpm add bumpp conventional-changelog-cli -D
 :::
 
 ## 配置bumpp.config.js
+
+> 在项目根目录下创建 `bumpp.config.js` 文件，并配置相关配置。
+
 ```javascript
 import { execSync } from 'node:child_process'
 import { defineConfig } from 'bumpp'
