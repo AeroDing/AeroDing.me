@@ -30,7 +30,7 @@ tags:
 .social-links {
   display: flex;
   gap: 30px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .social-link {
