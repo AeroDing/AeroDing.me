@@ -116,3 +116,42 @@ docs/                          # 文档内容目录
 - 使用 el-blue 主题色
 - 支持自定义 SCSS 样式
 - 可配置用户主题 CSS
+
+## 博客文章写作规范
+
+### Front Matter 格式
+每篇博客文章都应该在文件顶部添加 YAML Front Matter，格式如下：
+
+```yaml
+---
+title: 文章标题
+tags:
+  - 标签1
+  - 标签2
+  - 标签3
+---
+```
+
+**示例：**
+```yaml
+---
+title: Cursor 切换到 VSCode 扩展商店的完整指南
+tags:
+  - vscode
+  - cursor
+  - extensions
+---
+```
+
+**要求：**
+- `title`: 必须，文章标题，应该简洁明确
+- `tags`: 必须，至少包含 1-5 个相关标签
+- 标签应该使用小写英文，多个单词用连字符连接
+- 标签应该反映文章的主要技术栈、工具或主题
+
+### 常用标签参考
+- **前端技术**: `vue`, `react`, `javascript`, `typescript`, `html`, `css`
+- **工具软件**: `vscode`, `cursor`, `git`, `npm`, `webpack`, `vite`
+- **后端技术**: `node`, `python`, `java`, `go`, `database`
+- **开发工具**: `development`, `productivity`, `automation`, `cli`
+- **配置相关**: `config`, `setup`, `installation`, `configuration`
